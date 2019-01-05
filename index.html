@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+    <head>
+		<title>Esercizio 1</title>
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="html2pdf-master/dist/html2pdf.bundle.min.js"></script>
+		<script src="html2pdf-master/dist/html2pdf.bundle.js"></script>
+    </head>
+    <body>
+	    <script src="js/traceur.js"></script>
+		<script src="js/bootstrap.js"></script>
+		
+		<script type="module">
+			import {getArray} from './js/mapArray.js';
+			var input = 
+				[{
+					c1: "abbigliamento Abbigliamento",
+					c2: "estivo Estivo",
+					c3: "per-il-mare Per il mare"
+				},
+				{
+					c1: "abbigliamento Abbigliamento",
+					c2: "estivo Estivo",
+					c3: "per-la-montagna Per la montagna"
+				},
+				{
+					c1: "abbigliamento Abbigliamento",
+					c2: "invernale Invernale",
+				},
+				{
+					c1: "arte Arte",
+					c2: "quadri-e-fotografie Quadri e fotografie",
+				}]
+				
+				let array = getArray(input);
+				console.log(array);
+		</script>
+    </body>
+</html>
